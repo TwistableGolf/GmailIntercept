@@ -24,7 +24,7 @@ namespace GmailLogger
 
         private void SendButton_Click(object sender, EventArgs e)
         {
-
+            EmailSender.SendEmail(recipientText.Text,subjectText.Text,bodyText.Text,"");
         }
 
         private void Attachment_Click(object sender, EventArgs e)
@@ -33,6 +33,11 @@ namespace GmailLogger
         }
 
         private void attachFileDialog_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
